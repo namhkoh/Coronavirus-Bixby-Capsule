@@ -1,5 +1,5 @@
 capsule {
-  id (playground.covid19)
+  id (kohspace.covid19)
   version (0.1.0)
   format (3)
   targets {

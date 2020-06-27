@@ -2,7 +2,9 @@ capsule-info {
   display-name (COVID-19 Info)
   developer-name (Namho Koh)
   description ("Information capsule to return COVID-19 data.")
-  dispatch-name (COVID-19 Test)
-  // Set your own image for your capsule's icon
+  dispatch-name (COVID-19 Info)
   icon-asset (images/icons/patient.png)
+  search-keywords{
+		keyword (COVID-19)
+	}
 }
