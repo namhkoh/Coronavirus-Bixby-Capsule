@@ -22,6 +22,8 @@ module.exports.function = function getDataSummary () {
   const newRecovered = response["Global"]["NewRecovered"]
   const totalRecovered = response["Global"]["TotalRecovered"]
 
+
+
   var res = { obj: [] }
   res.obj.push({
     newConfirmed: newConfirmed,

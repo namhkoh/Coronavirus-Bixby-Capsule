@@ -60,20 +60,176 @@ result-view {
 					// 		style(Title_S)
 					// 	}
 					// }
+
 	title-card {
   title-area {
     slot1 {
       text {
-        style(Title_M)
-        value(New Confirmed)
+        style(Title_S)
+        value(New confirmed)
       }
     }
     slot3 {
       single-line {
         text {
-          color(Red)
+          color(Green)
           style(Detail_L)
-          value(current: )
+          value(total: )
+        }
+        spacer
+        text {
+          style(Detail_L_Soft)
+          value("#{value(globalFieldData.newConfirmed)}")
+        }
+      }
+    }
+  }
+  on-click {
+    intent {
+      goal {
+        GetDataSummary
+      }
+    }
+  }
+}
+title-card {
+  title-area {
+    slot1 {
+      text {
+        style(Title_S)
+        value(Total confirmed)
+      }
+    }
+    slot3 {
+      single-line {
+        text {
+          color(Green)
+          style(Detail_L)
+          value(total: )
+        }
+        spacer
+        text {
+          style(Detail_L_Soft)
+          value("#{value(globalFieldData.totalConfirmed)}")
+        }
+      }
+    }
+  }
+  on-click {
+    intent {
+      goal {
+        GetDataSummary
+      }
+    }
+  }
+}
+title-card {
+  title-area {
+    slot1 {
+      text {
+        style(Title_S)
+        value(New deaths)
+      }
+    }
+    slot3 {
+      single-line {
+        text {
+          color(Green)
+          style(Detail_L)
+          value(total: )
+        }
+        spacer
+        text {
+          style(Detail_L_Soft)
+          value("#{value(globalFieldData.newDeaths)}")
+        }
+      }
+    }
+  }
+  on-click {
+    intent {
+      goal {
+        GetDataSummary
+      }
+    }
+  }
+}
+title-card {
+  title-area {
+    slot1 {
+      text {
+        style(Title_S)
+        value(Total deaths)
+      }
+    }
+    slot3 {
+      single-line {
+        text {
+          color(Green)
+          style(Detail_L)
+          value(total: )
+        }
+        spacer
+        text {
+          style(Detail_L_Soft)
+          value("#{value(globalFieldData.totalDeaths)}")
+        }
+      }
+    }
+  }
+  on-click {
+    intent {
+      goal {
+        GetDataSummary
+      }
+    }
+  }
+}
+title-card {
+  title-area {
+    slot1 {
+      text {
+        style(Title_S)
+        value(New recorded)
+      }
+    }
+    slot3 {
+      single-line {
+        text {
+          color(Green)
+          style(Detail_L)
+          value(total: )
+        }
+        spacer
+        text {
+          style(Detail_L_Soft)
+          value("#{value(globalFieldData.newRecovered)}")
+        }
+      }
+    }
+  }
+  on-click {
+    intent {
+      goal {
+        GetDataSummary
+      }
+    }
+  }
+}
+title-card {
+  title-area {
+    slot1 {
+      text {
+        style(Title_S)
+        value(Total recovered)
+      }
+    }
+    slot3 {
+      single-line {
+        text {
+          color(Green)
+          style(Detail_L)
+          value(total: )
         }
         spacer
         text {

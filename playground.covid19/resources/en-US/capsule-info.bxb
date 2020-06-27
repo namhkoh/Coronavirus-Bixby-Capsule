@@ -1,7 +1,7 @@
 capsule-info {
-  display-name (COVID-19 Test)
+  display-name (COVID-19 Info)
   developer-name (Namho Koh)
-  description ("Example capsule description")
+  description ("Information capsule to return COVID-19 data.")
   dispatch-name (COVID-19 Test)
   // Set your own image for your capsule's icon
   icon-asset (images/icons/bixby_launcher.png)
