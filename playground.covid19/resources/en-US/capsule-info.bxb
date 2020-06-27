@@ -1,8 +1,8 @@
 capsule-info {
-  display-name (Example Name)
-  developer-name (Example Developer)
+  display-name (COVID-19 Test)
+  developer-name (Namho Koh)
   description ("Example capsule description")
-  dispatch-name (Example Capsule)
+  dispatch-name (COVID-19 Test)
   // Set your own image for your capsule's icon
   icon-asset (images/icons/bixby_launcher.png)
 }

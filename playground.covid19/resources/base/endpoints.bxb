@@ -4,7 +4,6 @@ endpoints {
     action-endpoint (GetDataSummary) {
       accepted-inputs ()
       local-endpoint ("getDataSummary.js")
-    
     }
   }
 }

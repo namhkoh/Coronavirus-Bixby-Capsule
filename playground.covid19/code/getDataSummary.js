@@ -15,5 +15,22 @@ module.exports.function = function getDataSummary () {
   var response = http.getUrl(api, options)
   console.log(response)
 
-  return 'testing'
+  const newConfirmed = response["Global"]["NewConfirmed"]
+  const totalConfirmed = response["Global"]["TotalConfirmed"]
+  const newDeaths = response["Global"]["NewDeaths"]
+  const totalDeaths = response["Global"]["TotalDeaths"]
+  const newRecovered = response["Global"]["NewRecovered"]
+  const totalRecovered = response["Global"]["TotalRecovered"]
+
+  var res = { obj: [] }
+  res.obj.push({
+    newConfirmed: newConfirmed,
+    totalConfirmed: totalConfirmed,
+    newDeaths: newDeaths,
+    totalDeaths: totalDeaths,
+    newRecovered: newRecovered,
+    totalRecovered: totalRecovered
+  })
+
+  return res.obj
 }

@@ -3,5 +3,5 @@ action (GetDataSummary) {
   description (Retrieves the daily COVID-19 summary data from API request.)
   collect {
   }
-  output (TotalData)
+  output (GlobalFieldData)
 }

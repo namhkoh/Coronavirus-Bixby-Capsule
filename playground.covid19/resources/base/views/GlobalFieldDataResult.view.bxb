@@ -1,0 +1,84 @@
+result-view {
+  match: GlobalFieldData (globalFieldData) {
+    from-output: GetDataSummary
+  }
+  message {
+    template ("Here are the global COVID-19 statistics")
+  }
+  render {
+		layout {
+			section {
+				content {
+					single-line {
+						text {
+							value {
+								template("New confirmed cases : #{value(globalFieldData.newConfirmed)}")
+							}
+							style(Detail_L_Soft)
+						}
+					}
+					//divider -- adds a dividing line between elements.
+					// paragraph {
+					// 	value {
+					// 		template("New confirmed cases : #{value(globalFieldData.newConfirmed)}")
+					// 	}
+					// 	style(Detail_M_Soft)
+					// }
+					//spacer //24px gap
+					single-line {
+						text {
+							value {
+								template("Total confirmed cases : #{value(globalFieldData.totalConfirmed)}")
+							}
+							style(Detail_L_Soft)
+						}
+					}
+          single-line {
+						text {
+							value {
+								template("New Deaths : #{value(globalFieldData.newDeaths)}")
+							}
+							style(Detail_L_Soft)
+						}
+					}
+
+          single-line {
+						text {
+							value {
+								template("Total deaths : #{value(globalFieldData.totalDeaths)}")
+							}
+							style(Detail_L_Soft)
+						}
+					}
+          single-line {
+						text {
+							value {
+								template("New recovered : #{value(globalFieldData.newRecovered)}")
+							}
+							style(Detail_L_Soft)
+						}
+					}
+          single-line {
+						text {
+							value {
+								template("Total recovered : #{value(globalFieldData.totalRecovered)}")
+							}
+							style(Detail_L_Soft)
+						}
+					}
+				}
+			}
+		}
+	}
+  conversation-drivers{
+    conversation-driver {
+        template ("South Korea")
+      }
+      conversation-driver {
+        template ("United Kingdom")
+      }
+      conversation-driver {
+        template ("United States of America")
+      }
+  }
+}
