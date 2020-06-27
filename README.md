@@ -14,7 +14,7 @@
  ## Version 1.0.0
     - Show me the global virus statistics.
  ## Capsule screenshot
- [Alt text](playground.covid19/screenshots/version1.jpg?raw=true "Version 1.0.0 response from NL query")
+ ![Screenshot](playground.covid19/screenshots/version1.jpg?raw=true "Version 1.0.0 response from NL query")
 
 # Current workings
  - In the process of integrating queries by country.
