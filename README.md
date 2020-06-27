@@ -1,6 +1,7 @@
 # Coronavirus Bixby Capsule
  ## Revision ID : 2020-179-69138
  Bixby capsule to return coronavirus statistics globally and by country.
+ API endpoint : `https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest#intro`
 
 # Requirements
  - Bixby enabled device.
