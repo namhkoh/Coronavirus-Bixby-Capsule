@@ -1,0 +1,7 @@
+action (GetDataSummary) {
+  type(Search)
+  description (Retrieves the daily COVID-19 summary data from API request.)
+  collect {
+  }
+  output (TotalData)
+}
