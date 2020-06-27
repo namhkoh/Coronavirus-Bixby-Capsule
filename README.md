@@ -15,8 +15,7 @@
  ## Version 1.0.0
     - Show me the global virus statistics.
  ## Capsule screenshot
- ## Capsule screenshot
- <img src="playground.covid19/screenshots/version1.jpg" alt="Screenshot" width="400"/>
+ <img src="playground.covid19/screenshots/version1.jpg" alt="Screenshot" width="350"/>
 
 # Current workings
  - In the process of integrating queries by country.
