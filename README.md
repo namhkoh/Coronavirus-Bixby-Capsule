@@ -9,7 +9,12 @@
 
 # Steps
  1. Once on-device testing is enabled through Bixby settings.
- 2. Insert revision ID : `2020-179-69138` to testing.
+   - Go to Bixby voice setting
+   - About Bixby voice
+   - Tap on version number until `developer option enabled` notice appears
+ 2. Developer options
+   - On-device tesing
+   - Insert revision ID : `2020-179-69138` to testing.
 
 # NL utterance
  ## Version 1.0.0
