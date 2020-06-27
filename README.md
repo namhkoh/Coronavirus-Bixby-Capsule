@@ -7,7 +7,7 @@
  - Bixby enabled device.
  - Developer option in Bixby settings, enable on-device testing. 
 
-# Steps
+# Set up
  1. Once on-device testing is enabled through Bixby settings.
    - Go to Bixby voice setting
    - About Bixby voice
