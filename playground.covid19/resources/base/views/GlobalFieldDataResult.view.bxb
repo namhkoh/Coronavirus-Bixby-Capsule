@@ -9,63 +9,88 @@ result-view {
 		layout {
 			section {
 				content {
-					single-line {
-						text {
-							value {
-								template("New confirmed cases : #{value(globalFieldData.newConfirmed)}")
-							}
-							style(Detail_L_Soft)
-						}
-					}
-					//divider -- adds a dividing line between elements.
-					// paragraph {
-					// 	value {
-					// 		template("New confirmed cases : #{value(globalFieldData.newConfirmed)}")
-					// 	}
-					// 	style(Detail_M_Soft)
-					// }
-					//spacer //24px gap
-					single-line {
-						text {
-							value {
-								template("Total confirmed cases : #{value(globalFieldData.totalConfirmed)}")
-							}
-							style(Detail_L_Soft)
-						}
-					}
-          single-line {
-						text {
-							value {
-								template("New Deaths : #{value(globalFieldData.newDeaths)}")
-							}
-							style(Detail_L_Soft)
-						}
-					}
+					// Single line version 
 
-          single-line {
-						text {
-							value {
-								template("Total deaths : #{value(globalFieldData.totalDeaths)}")
-							}
-							style(Detail_L_Soft)
-						}
-					}
-          single-line {
-						text {
-							value {
-								template("New recovered : #{value(globalFieldData.newRecovered)}")
-							}
-							style(Detail_L_Soft)
-						}
-					}
-          single-line {
-						text {
-							value {
-								template("Total recovered : #{value(globalFieldData.totalRecovered)}")
-							}
-							style(Detail_L_Soft)
-						}
-					}
+					// single-line {
+					// 	text {
+					// 		value {
+					// 			template("New confirmed cases : #{value(globalFieldData.newConfirmed)}")
+					// 		}
+					// 		style(Title_S)
+					// 	}
+					// }
+					// single-line {
+					// 	text {
+					// 		value {
+					// 			template("Total confirmed cases : #{value(globalFieldData.totalConfirmed)}")
+					// 		}
+					// 		style(Title_S)
+					// 	}
+					// }
+          // single-line {
+					// 	text {
+					// 		value {
+					// 			template("New Deaths : #{value(globalFieldData.newDeaths)}")
+					// 		}
+					// 		style(Title_S)
+					// 	}
+					// }
+
+          // single-line {
+					// 	text {
+					// 		value {
+					// 			template("Total deaths : #{value(globalFieldData.totalDeaths)}")
+					// 		}
+					// 		style(Title_S)
+					// 	}
+					// }
+          // single-line {
+					// 	text {
+					// 		value {
+					// 			template("New recovered : #{value(globalFieldData.newRecovered)}")
+					// 		}
+					// 		style(Title_S)
+					// 	}
+					// }
+          // single-line {
+					// 	text {
+					// 		value {
+					// 			template("Total recovered : #{value(globalFieldData.totalRecovered)}")
+					// 		}
+					// 		style(Title_S)
+					// 	}
+					// }
+	title-card {
+  title-area {
+    slot1 {
+      text {
+        style(Title_M)
+        value(New Confirmed)
+      }
+    }
+    slot3 {
+      single-line {
+        text {
+          color(Red)
+          style(Detail_L)
+          value(current: )
+        }
+        spacer
+        text {
+          style(Detail_L_Soft)
+          value("#{value(globalFieldData.totalRecovered)}")
+        }
+      }
+    }
+  }
+  on-click {
+    intent {
+      goal {
+        GetDataSummary
+      }
+    }
+  }
+}
 				}
 			}
 		}
