@@ -24,3 +24,4 @@
 
 # Current workings
  - In the process of integrating queries by country.
+ - Training Enum/Vocab values for country codes. 
