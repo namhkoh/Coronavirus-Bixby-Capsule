@@ -1,7 +1,8 @@
 hints {
 	uncategorized {
 		hint ("In COVID-19 Info, show me the global virus statistics")
-		hint ("In COVID-19 Info, how about South Korea?")
-		hint ("In COVID-19 Info, how about the UK?")
+		hint ("In COVID-19 Info, show me the United Kingdom statistics")
+		hint ("In COVID-19 Info, show me the South Korea statistics")
+		hint ("In COVID-19 Info, show me the United States statistics")
 	}
 }
