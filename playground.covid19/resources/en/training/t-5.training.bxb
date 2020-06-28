@@ -1,0 +1,4 @@
+train (t-5i9gfi83jh1hhnwy35qvnit57) {
+  utterance ("[g:CountryFieldData] Show me the (United States)[v:CountryCode:US] statistics")
+  last-modified (1593358886911)
+}

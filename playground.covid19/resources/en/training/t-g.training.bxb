@@ -1,0 +1,5 @@
+train (t-gh7giw2cquqz11ned4lqeoir7) {
+  utterance ("[g:CountryFieldData] Show me the (US)[v:CountryCode:US] statistics")
+  plan (Y2BmUMzOzyguSExO1UvOL8tMMbTUc84vzSspqnTLTM1JcUksScSixD21BCTjVAlVyyCDyxTn/JRUBiYGRiBmAJKMDCDABMEA)
+  last-modified (1593358702586)
+}

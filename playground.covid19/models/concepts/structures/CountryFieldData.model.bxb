@@ -28,6 +28,10 @@ structure (CountryFieldData) {
     type (CountryCode)
     min (Required) max (One)
   }
+  property (country) {
+    type (Country)
+    min (Required) max (One)
+  }
   property (dataTime) {
     type (DataTime)
     min (Required) max (One)

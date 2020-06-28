@@ -1,0 +1,244 @@
+result-view {
+  match: CountryFieldData (countryFieldData) {
+    from-output: GetDataByCountry
+  }
+  message {
+    template ("Here are the #{value(countryFieldData.country)} COVID-19 statistics")
+  }
+  render {
+		layout {
+			section {
+				content {
+	title-card {
+  title-area {
+    slot1 {
+      text {
+        style(Title_S)
+        value(New confirmed)
+      }
+    }
+    slot3 {
+      single-line {
+        text {
+          color(Green)
+          style(Detail_L)
+          value(total: )
+        }
+        spacer
+        text {
+          style(Detail_L_Soft)
+          value("#{value(countryFieldData.newConfirmed)}")
+        }
+      }
+    }
+  }
+  on-click {
+    intent {
+      goal {
+        GetDataSummary
+      }
+    }
+  }
+}
+title-card {
+  title-area {
+    slot1 {
+      text {
+        style(Title_S)
+        value(Total confirmed)
+      }
+    }
+    slot3 {
+      single-line {
+        text {
+          color(Green)
+          style(Detail_L)
+          value(total: )
+        }
+        spacer
+        text {
+          style(Detail_L_Soft)
+          value("#{value(countryFieldData.totalConfirmed)}")
+        }
+      }
+    }
+  }
+  on-click {
+    intent {
+      goal {
+        GetDataSummary
+      }
+    }
+  }
+}
+title-card {
+  title-area {
+    slot1 {
+      text {
+        style(Title_S)
+        value(New deaths)
+      }
+    }
+    slot3 {
+      single-line {
+        text {
+          color(Green)
+          style(Detail_L)
+          value(total: )
+        }
+        spacer
+        text {
+          style(Detail_L_Soft)
+          value("#{value(countryFieldData.newDeaths)}")
+        }
+      }
+    }
+  }
+  on-click {
+    intent {
+      goal {
+        GetDataSummary
+      }
+    }
+  }
+}
+title-card {
+  title-area {
+    slot1 {
+      text {
+        style(Title_S)
+        value(Total deaths)
+      }
+    }
+    slot3 {
+      single-line {
+        text {
+          color(Green)
+          style(Detail_L)
+          value(total: )
+        }
+        spacer
+        text {
+          style(Detail_L_Soft)
+          value("#{value(countryFieldData.totalDeaths)}")
+        }
+      }
+    }
+  }
+  on-click {
+    intent {
+      goal {
+        GetDataSummary
+      }
+    }
+  }
+}
+title-card {
+  title-area {
+    slot1 {
+      text {
+        style(Title_S)
+        value(New recorded)
+      }
+    }
+    slot3 {
+      single-line {
+        text {
+          color(Green)
+          style(Detail_L)
+          value(total: )
+        }
+        spacer
+        text {
+          style(Detail_L_Soft)
+          value("#{value(countryFieldData.newRecovered)}")
+        }
+      }
+    }
+  }
+  on-click {
+    intent {
+      goal {
+        GetDataSummary
+      }
+    }
+  }
+}
+title-card {
+  title-area {
+    slot1 {
+      text {
+        style(Title_S)
+        value(Total recovered)
+      }
+    }
+    slot3 {
+      single-line {
+        text {
+          color(Green)
+          style(Detail_L)
+          value(total: )
+        }
+        spacer
+        text {
+          style(Detail_L_Soft)
+          value("#{value(countryFieldData.totalRecovered)}")
+        }
+      }
+    }
+  }
+  on-click {
+    intent {
+      goal {
+        GetDataSummary
+      }
+    }
+  }
+}
+title-card {
+  title-area {
+    slot1 {
+      text {
+        style(Title_S)
+        value(Date)
+      }
+    }
+    slot3 {
+      single-line {
+        text {
+          color(Green)
+          style(Detail_L)
+          value(time: )
+        }
+        spacer
+        text {
+          style(Detail_L_Soft)
+          value("#{value(countryFieldData.dataTime)}")
+        }
+      }
+    }
+  }
+  on-click {
+    intent {
+      goal {
+        GetDataSummary
+      }
+    }
+  }
+}
+				}
+			}
+		}
+	}
+  conversation-drivers{
+    conversation-driver {
+        template ("South Korea")
+      }
+      conversation-driver {
+        template ("United Kingdom")
+      }
+      conversation-driver {
+        template ("United States of America")
+      }
+  }
+}

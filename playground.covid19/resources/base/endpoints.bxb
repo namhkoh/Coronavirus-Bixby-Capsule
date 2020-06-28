@@ -9,5 +9,9 @@ endpoints {
 			accepted-inputs ()
 			local-endpoint ("getDataSummary.js")
 		}
+		action-endpoint (GetDataByCountry) {
+			accepted-inputs (countryCode)
+			local-endpoint ("getDataByCountry.js")
+		}
   }
 }
