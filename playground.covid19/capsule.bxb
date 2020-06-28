@@ -15,4 +15,17 @@ capsule {
   store-sections {
 		section (EducationAndReference)
 	}
+  capsule-imports {
+		import (viv.time) {
+			as (time) version (3.1.48)
+		}
+		import (viv.core) {
+			as (core)
+			version-from (time)
+		}
+		import (viv.common) {
+			as (common)
+			version (4.0.3)
+		}
+	}
 }

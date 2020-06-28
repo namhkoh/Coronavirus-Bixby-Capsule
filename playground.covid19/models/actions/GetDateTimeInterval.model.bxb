@@ -1,0 +1,16 @@
+action (GetDateTimeInterval) {
+	type (Constructor)
+	description (Date time interval)
+	collect {
+		input (dateTimeExpression) {
+			type (time.DateTimeExpression)
+			min (Required)
+			default-select {
+				with-rule {
+					select-first
+				}
+			}
+		}
+	}
+	output (DateTimeInterval)
+}

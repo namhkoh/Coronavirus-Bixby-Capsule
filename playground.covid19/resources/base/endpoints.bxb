@@ -1,9 +1,9 @@
 endpoints {
   action-endpoints {
     // Uncomment the lines below and enter the information for actions, inputs, and the appropriate local or remote endpoints
-    action-endpoint (GetDataSummary) {
-      accepted-inputs ()
-      local-endpoint ("getDataSummary.js")
-    }
+    action-endpoint (GetDateTimeInterval) {
+			accepted-inputs (dateTimeExpression)
+			local-endpoint ("getDateTimeInterval.js")
+		}
   }
 }

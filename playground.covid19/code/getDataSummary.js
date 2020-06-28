@@ -13,7 +13,13 @@ module.exports.function = function getDataSummary () {
   }
   var api = "https://api.covid19api.com/summary"
   var response = http.getUrl(api, options)
-  console.log(response)
+  //console.log(response["Countries"])
+
+  for(var i = 0; i < response["Countries"].length; i++) {
+    if (response["Countries"][i]["CountryCode"] == "US") {
+        console.log(response["Countries"][i])      
+    }
+  }
 
   const newConfirmed = response["Global"]["NewConfirmed"]
   const totalConfirmed = response["Global"]["TotalConfirmed"]

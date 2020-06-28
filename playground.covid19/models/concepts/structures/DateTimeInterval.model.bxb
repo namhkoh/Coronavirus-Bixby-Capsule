@@ -1,0 +1,4 @@
+structure (DateTimeInterval) {
+	description (Date time interval structure)
+	role-of (time.DateTimeInterval)
+}
