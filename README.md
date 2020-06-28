@@ -25,9 +25,11 @@
     - Show me the United Kingdom statistics
     - Show me the United States statistics
     - Show me the US statistics
- ## Capsule screenshot
+ ## Capsule screenshot - Global query response
  <img src="playground.covid19/screenshots/version1.jpg" alt="Screenshot" width="350"/>
-  <img src="playground.covid19/screenshots/version2.jpg" alt="Screenshot" width="350"/>
+ 
+ ## Capsule screenshot - By country query response
+ <img src="playground.covid19/screenshots/version2.jpg" alt="Screenshot" width="350"/>
 
 # Current workings
  - Add error handlers
