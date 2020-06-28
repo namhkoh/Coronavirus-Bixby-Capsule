@@ -1,5 +1,5 @@
 # Coronavirus Bixby Capsule
- ## Revision ID : 2020-179-69138
+ ## Revision ID : 2020-180-57795
  - Bixby capsule to return coronavirus statistics globally and by country.
  - API endpoint : `https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest#intro`
 
@@ -14,14 +14,22 @@
    - Tap on version number until `developer option enabled` notice appears
  2. Developer options
    - On-device tesing
-   - Insert revision ID : `2020-179-69138` to testing.
+   - Insert revision ID to testing.
 
 # NL utterance
- ## Version 1.0.0
-    - Show me the global virus statistics.
+ ## Version 1.0.5
+  ### Global
+      - Show me the global virus statistics
+  ### By country
+    - Show me the South Korea statistics
+    - Show me the United Kingdom statistics
+    - Show me the United States statistics
+    - Show me the US statistics
  ## Capsule screenshot
  <img src="playground.covid19/screenshots/version1.jpg" alt="Screenshot" width="350"/>
+  <img src="playground.covid19/screenshots/version2.jpg" alt="Screenshot" width="350"/>
 
 # Current workings
- - In the process of integrating queries by country.
- - Training Enum/Vocab values for country codes. 
+ - Add error handlers
+ - Add queries for conversational drivers
+ - Add flexible NL for global statistics
