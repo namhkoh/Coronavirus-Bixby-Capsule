@@ -1,0 +1,6 @@
+enum (CountryCode) {
+  description (Country code)
+  symbol (GB)
+  symbol (US)
+  symbol (KR)
+}

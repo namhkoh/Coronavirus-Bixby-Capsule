@@ -5,5 +5,9 @@ endpoints {
 			accepted-inputs (dateTimeExpression)
 			local-endpoint ("getDateTimeInterval.js")
 		}
+    action-endpoint (GetDataSummary) {
+			accepted-inputs ()
+			local-endpoint ("getDataSummary.js")
+		}
   }
 }

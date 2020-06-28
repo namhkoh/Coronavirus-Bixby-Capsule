@@ -1,0 +1,5 @@
+vocab(CountryCode){
+  "US" {"United States, united states", "states", "States", "us"}
+  "GB" {"United Kingdom", "uk", "UK", "Great Britain", "united kingdom"}
+  "KR" {"South Korea", "south korea"}
+}

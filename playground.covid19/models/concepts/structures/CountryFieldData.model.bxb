@@ -1,0 +1,35 @@
+structure (CountryFieldData) {
+  description (By country COVID-19 statistics)
+  property (newConfirmed) {
+    type (NewConfirmed)
+    min (Required) max (One)
+  }
+  property (totalConfirmed) {
+    type (TotalConfirmed)
+    min (Required) max (One)
+  }
+  property (newDeaths) {
+    type (NewDeaths)
+    min (Required) max (One)
+  }
+  property (totalDeaths) {
+    type (TotalDeaths)
+    min (Required) max (One)
+  }
+  property (newRecovered) {
+    type (NewRecovered)
+    min (Required) max (One)
+  }
+  property (totalRecovered) {
+    type (TotalRecovered)
+    min (Required) max (One)
+  }
+  property (countryCode) {
+    type (CountryCode)
+    min (Required) max (One)
+  }
+  property (dataTime) {
+    type (DataTime)
+    min (Required) max (One)
+  }
+}

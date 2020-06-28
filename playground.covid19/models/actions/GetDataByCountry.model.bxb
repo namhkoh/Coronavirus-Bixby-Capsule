@@ -1,0 +1,11 @@
+action (GetDataByCountry) {
+  type(Search)
+  description (Action to get COVID-19 data by country)
+  collect {
+    input (countryCode) {
+      type (CountryCode)
+      min (Required) max (One)
+    }
+  }
+  output (CountryFieldData)
+}
