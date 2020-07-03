@@ -13,35 +13,24 @@ module.exports.function = function getDataByCountry (countryCode) {
   }
   var api = "https://api.covid19api.com/summary"
   var response = http.getUrl(api, options)
-  //console.log(response["Countries"])
-  console.log(countryCode)
 
-  for(var i = 0; i < response["Countries"].length; i++) {
-    if (response["Countries"][i]["CountryCode"] == countryCode) {
-        console.log(response["Countries"][i])
-        const newConfirmed = response["Countries"][i]["NewConfirmed"]
-        const totalConfirmed =  response["Countries"][i]["TotalConfirmed"]
-        const newDeaths =  response["Countries"][i]["NewDeaths"]
-        const totalDeaths =response["Countries"][i]["TotalDeaths"]
-        const newRecovered = response["Countries"][i]["NewRecovered"]
-        const totalRecovered = response["Countries"][i]["TotalRecovered"]
-        const country = response["Countries"][i]["CountryCode"]
-        const countryName = response["Countries"][i]["Country"]
-        const dataTime = response["Countries"][i]["Date"] 
+  const ret = response["Countries"].filter(function(item){
+    if (item["CountryCode"] == countryCode){
+      return item
     }
-  }
+  })
 
   var res = { obj: [] }
   res.obj.push({
-    newConfirmed: newConfirmed,
-    totalConfirmed: totalConfirmed,
-    newDeaths: newDeaths,
-    totalDeaths: totalDeaths,
-    newRecovered: newRecovered,
-    totalRecovered: totalRecovered,
-    countryCode: country,
-    country: countryName,
-    dataTime: dataTime
+    newConfirmed: ret[0]["NewConfirmed"],
+    totalConfirmed: ret[0]["TotalConfirmed"],
+    newDeaths: ret[0]["NewDeaths"],
+    totalDeaths: ret[0]["TotalDeaths"],
+    newRecovered: ret[0]["NewRecovered"],
+    totalRecovered: ret[0]["TotalRecovered"],
+    countryCode: ret[0]["CountryCode"],
+    country: ret[0]["Country"],
+    dataTime: ret[0]["Date"]
   })
 
   console.log(res.obj)

@@ -15,20 +15,12 @@ module.exports.function = function getDataSummary () {
   var response = http.getUrl(api, options)
   console.log(response["Countries"])
 
-  // for(var i = 0; i < response["Countries"].length; i++) {
-  //   if (response["Countries"][i]["CountryCode"] == "US") {
-  //       console.log(response["Countries"][i])      
-  //   }
-  // }
-
   const newConfirmed = response["Global"]["NewConfirmed"]
   const totalConfirmed = response["Global"]["TotalConfirmed"]
   const newDeaths = response["Global"]["NewDeaths"]
   const totalDeaths = response["Global"]["TotalDeaths"]
   const newRecovered = response["Global"]["NewRecovered"]
   const totalRecovered = response["Global"]["TotalRecovered"]
-
-
 
   var res = { obj: [] }
   res.obj.push({
