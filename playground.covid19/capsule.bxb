@@ -1,6 +1,6 @@
 capsule {
   id (kohspace.covid19)
-  version (1.0.7)
+  version (1.0.8)
   format (3)
   targets {
     target (bixby-mobile-en-US)
