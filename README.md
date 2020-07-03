@@ -1,5 +1,5 @@
 # Coronavirus Bixby Capsule
- ## Revision ID : 2020-180-57795
+ ## Revision ID : 2020-185-15575
  - Bixby capsule to return coronavirus statistics globally and by country.
  - API endpoint : `https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest#intro`
 
@@ -35,3 +35,6 @@
  - Add error handlers
  - Add queries for conversational drivers
  - Add flexible NL for global statistics
+
+# Resources
+ - Capsule icon: https://www.flaticon.com/free-icon/patient_2750657?term=covid&page=1&position=20 
