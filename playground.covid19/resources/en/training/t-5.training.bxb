@@ -2,3 +2,7 @@ train (t-5i9gfi83jh1hhnwy35qvnit57) {
   utterance ("[g:CountryFieldData] Show me the (United States)[v:CountryCode:US] statistics")
   last-modified (1593358886911)
 }
+train (t-5mv05rmpp41x12bpzohvv8ngl) {
+  utterance ("[g:CountryFieldData] (United States)[v:CountryCode:US]")
+  last-modified (1593751224383)
+}

@@ -1,0 +1,8 @@
+train (t-t6om2l5kcn0pet14zbo8y833e) {
+  utterance ("[g:CountryFieldData] Show me the (Portugal)[v:CountryCode:PT] statistics")
+  last-modified (1593751061681)
+}
+train (t-t5mplgz4841cqd5ybu9gew3d7) {
+  utterance ("[g:CountryFieldData] (United Kingdom)[v:CountryCode:GB]")
+  last-modified (1593751176922)
+}

@@ -3,4 +3,5 @@ enum (CountryCode) {
   symbol (GB)
   symbol (US)
   symbol (KR)
+  symbol (PT)
 }
