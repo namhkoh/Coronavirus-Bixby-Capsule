@@ -1,27 +1,33 @@
 structure (GlobalFieldData) {
   description (Global COVID-19 statistics)
   property (newConfirmed) {
-    type (NewConfirmed)
+    type (viv.core.Text)
     min (Required) max (One)
+    visibility (Private)
   }
   property (totalConfirmed) {
-    type (TotalConfirmed)
+    type (viv.core.Text)
     min (Required) max (One)
+    visibility (Private)
   }
   property (newDeaths) {
-    type (NewDeaths)
+    type (viv.core.Text)
     min (Required) max (One)
+    visibility (Private)
   }
   property (totalDeaths) {
-    type (TotalDeaths)
+    type (viv.core.Text)
     min (Required) max (One)
+    visibility (Private)
   }
   property (newRecovered) {
-    type (NewRecovered)
+    type (viv.core.Text)
     min (Required) max (One)
+    visibility (Private)
   }
   property (totalRecovered) {
-    type (TotalRecovered)
+    type (viv.core.Text)
     min (Required) max (One)
+    visibility (Private)
   }
 }
