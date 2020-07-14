@@ -1,5 +1,8 @@
 result-view {
   match: Content (this)
+  message{
+    template ("Here is an official video from the CDC youtube channel.")
+  }
   render {
     layout {
       section {
