@@ -1,3 +1,7 @@
+/**
+ * https://www.youtube.com/watch?v=_U_xiA8r0mg&feature=emb_logo tutorial for help 
+ * https://github.com/bixbydevelopers/capsule-sample-fact code used for youtube embedding
+ */
 exports.getDadJoke = getDadJoke
 
 var http = require('http')
