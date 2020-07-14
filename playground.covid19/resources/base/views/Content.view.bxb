@@ -1,0 +1,16 @@
+result-view {
+  match: Content (this)
+  render {
+    layout {
+      section {
+        content {
+          video {
+            youtube {
+              video-id ("#{value(this.youtubeId)}")
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -13,5 +13,9 @@ endpoints {
 			accepted-inputs (countryCode)
 			local-endpoint ("getDataByCountry.js")
 		}
+		action-endpoint (GetContent) {
+			accepted-inputs (searchTerm)
+			local-endpoint ("GetContent.js")
+		}
   }
 }
