@@ -12,7 +12,7 @@ structure (Content) {
   }
   property (youtubeId){
     type (core.Text)
-    min (Optional) max (One)
+    min (Required) max (One)
     visibility (Private)
   }
 }

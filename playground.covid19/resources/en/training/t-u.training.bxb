@@ -2,3 +2,7 @@ train (t-uw4lrz5jd3kiknkvklc3i05j7) {
   utterance ("[g:CountryFieldData] Show me the (United Kingdom)[v:CountryCode:GB] statistics")
   last-modified (1593359392786)
 }
+train (t-um5vtq4o33y496ni8dezv4pc0) {
+  utterance ("[g:Content] Show me videos from the cdc\n")
+  last-modified (1594707600782)
+}
