@@ -40,8 +40,7 @@ exports.function = function (searchTerm) {
   if (chosenContent) {
     return {
       text: chosenContent.text,
-      image: chosenContent.image,
-      youtuveId: chosenContent.youtubeId
+      youtubeId: chosenContent.youtubeId
     }
   } else {
     return null;
