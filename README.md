@@ -26,6 +26,9 @@
     - Show me the United States statistics
     - Show me the US statistics
     - Show me the Portugal statistics
+  ### Video content
+    - Show me videos from the CDC
+    - When are key times to practice social distancing
  ## Capsule screenshot - Global query response
  <img src="playground.covid19/screenshots/version1.jpg" alt="Screenshot" width="350"/>
  
