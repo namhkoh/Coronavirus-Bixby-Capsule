@@ -1,5 +1,5 @@
 # Coronavirus Bixby Capsule
- ## Revision ID : 2020-185-17314
+ ## Revision ID : 2020-197-20017
  - Bixby capsule to return coronavirus statistics globally and by country.
  - API endpoint : `https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest#intro`
 
@@ -17,7 +17,7 @@
    - Insert revision ID to testing.
 
 # NL utterance
- ## Version 1.0.8
+ ## Version 1.0.9
   ### Global
       - Show me the global virus statistics
   ### By country
@@ -29,11 +29,15 @@
   ### Video content
     - Show me videos from the CDC
     - When are key times to practice social distancing
+
  ## Capsule screenshot - Global query response
  <img src="playground.covid19/screenshots/version1.jpg" alt="Screenshot" width="350"/>
  
  ## Capsule screenshot - By country query response
  <img src="playground.covid19/screenshots/version2.jpg" alt="Screenshot" width="350"/>
+
+  ## Capsule screenshot - Youtube video query response
+ <img src="playground.covid19/screenshots/version3.jpg" alt="Screenshot" width="350"/>
 
 # Current workings
  - Add error handlers
