@@ -1,5 +1,5 @@
 # Coronavirus Bixby Capsule
- ## Revision ID : 2020-197-20017
+ ## Revision ID : 2020-239-22817
  - Bixby capsule to return coronavirus statistics globally and by country.
  - API endpoint : `https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest#intro`
 
@@ -42,6 +42,7 @@
 # Current workings
  - Add error handlers
  - Update voice UI for conversational statistics
+ - Added integration for speaker (Multi-modal)
 
 # Future Implementations
  - Implement additional queries
