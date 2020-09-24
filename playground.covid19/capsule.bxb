@@ -1,12 +1,12 @@
 capsule {
   id (kohspace.covid19)
-  version (1.0.9)
+  version (1.1.0)
   format (3)
   targets {
     target (bixby-mobile-en-US)
-    target (bixby-speaker-en-US)
+    //target (bixby-speaker-en-US)
   }
-  runtime-version (7)
+  runtime-version (8)
   store-countries {
     all
   }
